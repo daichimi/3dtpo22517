@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/estilo.css">
+  <link rel="icon" href="img/Logoicon.png">
+  <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+  <script src="https://kit.fontawesome.com/6e4a6131a2.js" crossorigin="anonymous"></script>
+  <title>Personalizados | 3D Todo</title>
+</head>
+
+<body>
+  <header id="idheader">
+  </header>
+  <h1 class="titprod">Personalizados</h1>
+  <main class="contperstext">
+    <div class="vid-you">
+    <iframe width="1000" height="315" src="https://www.youtube.com/embed/l1UHEkJKnDc" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+  </div>
+    <div class="parpers">
+      <p class="parrafo">Soluciones en impresión 3D, agilidad de producción, piezas de alta calidad y valor, en forma
+        rápida y económica.
+        Amplia gama de materiales, tecnologías y experiencias de uso.
+        Contamos con diseños existentes personalizables con el logo de su empresa o texto elegido, así como también
+        la
+        posibilidad de que ud. nos solicite un producto para ser diseñado a medida de acuerdo a sus preferencias.
+      </p>
+    </div>
+  </main>
+  <div class="contcont">
+    <form class="row g-3 needs-validation" novalidate>
+      <div class="col-md-6">
+        <label for="validationCustom01" class="form-label">Nombre y Apellido*</label>
+        <input type="text" class="form-control" id="validationCustom01" required>
+        <div class="invalid-feedback">
+          Por favor, ingrese su nombre
+        </div>
+      </div>
+      <div class="col-md-6">
+        <label for="validationCustom02" class="form-label">Correo electrónico*</label>
+        <input type="email" class="form-control" id="validationCustom02" placeholder="" required>
+
+        <div class="invalid-feedback">
+          Ingrese un e-mail
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationCustom03" class="form-label">Modelo elegido</label>
+        <select class="form-select" id="validationCustom04" required>
+          <option selected disabled value="">Seleccione...</option>
+          <option>Organizador de escritorio</option>
+          <option>Maceta</option>
+          <option>Llavero</option>
+          <option>Mate</option>
+          <option>Lámpara</option>
+          <option>Portafoto</option>
+          <option>Personalizado</option>
+        </select>
+        <div class="invalid-feedback">
+          Por favor, seleccione una opción.
+        </div>
+      </div>
+
+      <div class="col-md-6">
+        <label for="validationCustom04" class="form-label">Cantidad</label>
+        <input type="text" class="form-control" id="validationCustom03" required>
+        <div class="invalid-feedback">
+          Por favor, indique cantidad.
+        </div>
+      </div>
+
+      <div class="col-md-12">
+        <label for="validationCustom05" class="form-label">Comentarios</label>
+        <input type="text" class="form-control" id="validationCustom05"
+          placeholder="Detalles de su pedido personalizado">
+        <!-- <div class="invalid-feedback">
+                    Por favor, Indique detalles a tener en cuenta (lugar de entrega, diseño personalizado, etc.).
+                  </div>-->
+      </div>
+
+
+      <div class="col-12">
+        <button class="btn btn-primary" type="submit">Enviar solicitud</button>
+      </div>
+    </form>
+  </div>
+  <main class="contpers">
+    <div class="contgrid">
+      <div class="contimgprod">
+        <img src="img/perso/Desktop organiser.png" alt="" class="imgpro">
+      </div>
+      <div class="contimgprod">
+        <img src="img/perso/Hexagon-Succulent-Planter-Model-Stl-Files.jpg" alt="" class="imgpro">
+      </div>
+      <div class="contimgprod">
+        <img src="img/perso/Llaveros.png" alt="" class="imgpro">
+      </div>
+      <div class="contimgprod">
+        <img src="img/perso/Mate.png" alt="" class="imgpro">
+      </div>
+      <div class="contimgprod">
+        <img src="img/perso/dilamp_cover.webp" alt="" class="imgpro">
+      </div>
+      <div class="contimgprod">
+        <img src="img/perso/foto.jpg" alt="" class="imgpro">
+      </div>
+  </main>
+
+  <section class="services">
+    <section class="grid">
+      </div>
+    </section>
+    <footer id="idfooter">
+    </footer>
+    <script src="js/script.js"></script>
+    <script>
+
+      (function () {
+        'use strict'
+        var forms = document.querySelectorAll('.needs-validation')
+
+        Array.prototype.slice.call(forms)
+          .forEach(function (form) {
+            form.addEventListener('submit', function (event) {
+              if (!form.checkValidity()) {
+                event.preventDefault()
+                event.stopPropagation()
+              }
+              else {
+                alert("Datos recibidos!")
+              }
+
+              form.classList.add('was-validated')
+            }, false)
+          })
+      })()
+    </script>
+</body>
+
+</html>

@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <link rel="icon" href="img/Logoicon.png">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@100;300;400;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/6e4a6131a2.js" crossorigin="anonymous"></script>
+    <title>Contacto | 3D Todo</title>
+</head>
+<body>
+        <header id="idheader">
+        </header>
+        <h1 class="titprod">Contacto</h1>
+        <div id="map"></div>
+        <main class="contconts">
+            <div class="contcont">
+        <h3>Dejanos tu mensaje</h3>
+        <form class="needs-validation" novalidate>
+            <div class="col-md-10">
+              <label for="validate01" class="col-form-label-sm">Nombre y Apellido*</label>
+              <input type="text" class="form-control" id="validate01" required>
+              <div class="invalid-feedback">
+                Por favor, Ingrese su nombre
+              </div>
+            </div>
+            <div class="col-md-10">
+              <label for="validate02" class="col-form-label-sm">Correo electrónico*</label>
+              <input type="email" class="form-control" id="validate02" placeholder="mail@mail.com" required>
+              
+              <div class="invalid-feedback">
+                Ingrese un e-mail
+              </div>
+            </div>
+    
+            <div class="col-md-10">
+                <label for="validate021" class="col-form-label-sm">Número de teléfono*</label>
+                <input type="text" class="form-control" id="validate021">
+            </div>
+            
+            <div class="col-md-10">
+              <label for="validate03" class="col-form-label-sm">Asunto*</label>
+              <select class="form-select" id="validate03" required>
+                <option selected disabled value="">Seleccione...</option>
+                <option>Cotizaciones</option>
+                <option>Diseños 3d</option>
+                <option>Impresiones 3d</option>
+                <option>Otras Consultas</option>
+              </select>
+              <div class="invalid-feedback">
+                Por favor, seleccione una opción.
+              </div>
+            </div>
+    
+    
+            <div class="col-md-10">
+              <label for="validate04" class="col-form-label-sm">Mensaje</label>
+              <input type="text" class="form-control" id="validate04" placeholder="Comentarios" required>
+             <div class="invalid-feedback">
+                Por favor, ingrese su consulta.
+              </div>
+            </div>
+                    <div class="col-6">
+                <div class="form-check">
+                  <input class="form-check-input" type="checkbox" value="" id="invalidCheck">
+                  <label class="form-check-label" for="invalidCheck">
+                   Prefiero que me llamen 
+                  </label>           
+                </div>
+              </div>
+            <br>
+            <div class="col-6">
+              <button class="btn btn-primary" type="submit">Enviar</button>
+            </div>
+          </form>
+        </div>
+        </main>
+            </section>
+    <footer id="idfooter">
+    </footer>
+    <script src="js/script.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBh2jD4hCY_Zm45wQvA_QxqKXWBd0WWupA&callback=iniciarMap">
+    </script>
+    <script>
+  
+        (function () {
+          'use strict'
+          var forms = document.querySelectorAll('.needs-validation')
+        
+          Array.prototype.slice.call(forms)
+            .forEach(function (form) {
+              form.addEventListener('submit', function (event) {
+                if (!form.checkValidity()) {
+                  event.preventDefault()
+                  event.stopPropagation()
+                }
+                else {
+                    alert ("Gracias por su consulta, responderemos a la brevedad.")
+                }
+        
+                form.classList.add('was-validated')
+              }, false)
+            })
+        })()
+        </script>
+</body>
+</html>
